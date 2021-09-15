@@ -1,0 +1,33 @@
+@mixin flex_column($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+.skills {
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .skills_title {
+    }
+
+    .skills_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .skills_list {
+            width: 40%;
+            @include flex_column(10px);
+        }
+    }
+
+    .languages {
+        width: calc(80% + 20% / 3);
+        @include flex_column(10px);
+    }
+}

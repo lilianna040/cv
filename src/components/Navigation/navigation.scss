@@ -1,0 +1,32 @@
+.navigation {
+    width: 25vw;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(228, 228, 228);
+
+    .wrapper_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        .photo {
+            width: 13vw;
+            height: 13vw;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 1.2rem;
+            font-family: 'Poiret One', cursive;
+        }
+    }
+
+    .nav_buttons {
+        width: 100%;
+    }
+}
